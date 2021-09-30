@@ -1,0 +1,11 @@
+@import '../themes/white-label';
+
+ngx-loading-bar {
+  div {
+    color: var(--colorPrimary);
+
+    &.ngx-bar {
+      background: var(--colorPrimary) !important;
+    }
+  }
+}

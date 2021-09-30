@@ -1,0 +1,66 @@
+$bookline: 'bookline';
+$comicbook: 'comicbook';
+
+@mixin border-top-left-radius($value) {
+  -webkit-border-top-left-radius: $value;
+  -moz-border-radius-topleft: $value;
+  border-top-left-radius: $value;
+}
+
+@mixin border-top-right-radius($value) {
+  -webkit-border-top-right-radius: $value;
+  -moz-border-radius-topright: $value;
+  border-top-right-radius: $value;
+}
+
+@mixin border-bottom-left-radius($value) {
+  -webkit-border-bottom-left-radius: $value;
+  -moz-border-radius-bottomleft: $value;
+  border-bottom-left-radius: $value;
+}
+
+@mixin border-bottom-right-radius($value) {
+  -webkit-border-bottom-right-radius: $value;
+  -moz-border-radius-bottomright: $value;
+  border-bottom-right-radius: $value;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin translate($left, $top) {
+  transform: translate($left, $top);
+  -webkit-transform: translate($left, $top);
+  -moz-transform: translate($left, $top);
+  -o-transform: translate($left, $top);
+  -ms-transform: translate($left, $top);
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin box-shadow($props...) {
+  -webkit-box-shadow: $props;
+  -moz-box-shadow:    $props;
+  -ms-box-shadow:     $props;
+  box-shadow:         $props;
+}
+
+@mixin rotate($value) {
+  transform: rotate($value);
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}

@@ -1,0 +1,12 @@
+@import './default-styles';
+
+@import './white-label';
+
+.row {
+  .col-content {
+    padding: 24px 15px;
+    border: 1px solid var(--colorGrayExtraLight);
+    height: 100%;
+    @include border-radius(5px);
+  }
+}
