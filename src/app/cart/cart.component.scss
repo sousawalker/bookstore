@@ -1,0 +1,82 @@
+@import '../../themes/default-styles';
+
+@import '../../themes/white-label';
+
+#cart {
+  padding: 30px 15px;
+
+  .container {
+    position: relative;
+  }
+
+  .back {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-family: $comicbook;
+    font-size: 2em;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+    font-family: $comicbook;
+    font-size: 4em;
+    margin-bottom: 50px;
+  }
+
+  table {
+    width: 100%;
+    border-left: 1px solid var(--colorGrayExtraLight);
+    border-top: 1px solid var(--colorGrayExtraLight);
+    font-family: $comicbook;
+
+    thead {
+      td {
+        font-size: 2em;
+      }
+    }
+
+    td {
+      padding: 8px 12px;
+      border-right: 1px solid var(--colorGrayExtraLight);
+      border-bottom: 1px solid var(--colorGrayExtraLight);
+    }
+
+    tbody {
+      td {
+        font-size: 1.6em;
+
+        .delete {
+          position: relative;
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-color: var(--colorSecondary);
+          border: 1px solid var(--colorPrimary);
+          font-family: $comicbook;
+          color: var(--colorWhite);
+          @include border-radius(3px);
+
+          span {
+            position: relative;
+            top: -2px;
+          }
+
+          &:hover {
+            background-color: var(--colorSecondaryHover);
+          }
+        }
+
+        &.title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

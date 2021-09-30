@@ -1,0 +1,35 @@
+<div id="cart">
+  <div class="container">
+    <button class="back" [routerLink]="['/']">Voltar</button>
+
+    <h1>Carrinho</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <td>PRODUTO</td>
+          <td width="150">QUANTIDADE</td>
+          <td width="120">SUBTOTAL</td>
+          <td width="70"></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books; let i = index;">
+          <td class="title">{{ book.title }}</td>
+          <td align="center">1</td>
+          <td>{{ book.price | currencyFormat : 2 }}</td>
+          <td align="center">
+            <button class="delete" (click)="removeItem(i);">
+              <span>x</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">TOTAL</td>
+          <td>{{ total | currencyFormat : 2 }}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
