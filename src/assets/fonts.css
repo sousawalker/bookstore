@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'bookline';
+    src: url('/assets/fonts/book-line_regular.woff2') format('woff2'),
+         url('/assets/fonts/book-line_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comicbook';
+    src: url('/assets/fonts/comic-book_regular.woff2') format('woff2'),
+         url('/assets/fonts/comic-book_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
