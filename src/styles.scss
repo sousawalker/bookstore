@@ -1,0 +1,18 @@
+@import './themes/grid-bootstrap';
+@import './themes/loading-bar';
+@import './themes/white-label';
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  * {
+    outline: none;
+  }
+}
+
+body {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
