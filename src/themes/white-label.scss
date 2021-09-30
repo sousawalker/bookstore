@@ -1,0 +1,27 @@
+$variables: (
+  --colorPrimary: var(--colorPrimary),
+  --colorPrimaryHover: var(--colorPrimaryHover),
+
+  --colorSecondary: var(--colorSecondary),
+  --colorSecondaryHover: var(--colorSecondaryHover),
+
+  --colorGrayDark: var(--colorGrayDark),
+  --colorGray: var(--colorGray),
+  --colorGrayLight: var(--colorGrayLight),
+  --colorGrayExtraLight: var(--colorGrayExtraLight),
+  --colorGrayMoreLight: var(--colorGrayMoreLight),
+
+  --colorWhite: var(--colorWhite),
+
+  --colorRed: var(--colorRed),
+
+  --colorGreen: var(--colorGreen),
+
+  --colorBlack: var(--colorBlack),
+  --colorBlackHover: var(--colorBlackHover),
+  --colorBlackLight: var(--colorBlackLight),
+);
+
+@function var($variable) {
+  @return map-get($variables, $variable);
+}

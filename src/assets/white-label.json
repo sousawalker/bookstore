@@ -1,0 +1,25 @@
+{
+  "default": {
+    "colorPrimary": "#0070BA",
+    "colorPrimaryHover": "#005B97",
+
+    "colorSecondary": "#04ADF0",
+    "colorSecondaryHover": "#058CC2",
+
+    "colorGrayDark": "#646464",
+    "colorGray": "#808284",
+    "colorGrayLight": "#989898",
+    "colorGrayExtraLight": "#E2E2E2",
+    "colorGrayMoreLight": "#F6F6F6",
+
+    "colorWhite": "#FFFFFF",
+
+    "colorRed": "#E62200",
+
+    "colorGreen": "#80C537",
+
+    "colorBlack": "#000000",
+    "colorBlackHover": "#272727",
+    "colorBlackLight": "#3F3E3E"
+  }
+}
