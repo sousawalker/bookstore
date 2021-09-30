@@ -1,0 +1,9 @@
+<div id="header">
+  <div class="container">
+    <img src="/assets/imgs/logo.svg">
+
+    <div class="cart icn-cart" [routerLink]="['/carrinho']">
+      <span *ngIf="quantity > 0">{{ quantity }}</span>
+    </div>
+  </div>
+</div>

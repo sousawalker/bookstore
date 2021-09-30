@@ -1,0 +1,62 @@
+@import '../../../../themes/default-styles';
+
+@import '../../../../themes/white-label';
+
+#header {
+  padding: 15px;
+  @include box-shadow(0px 5px 5px 0px rgba(50, 50, 50, 0.25));
+
+  img {
+    height: 50px;
+  }
+
+  .cart {
+    position: relative;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+
+    &:before {
+      font-size: 3em;
+      color: var(--colorSecondary);
+    }
+
+    span {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: var(--colorPrimary);
+      color: var(--colorWhite);
+      text-align: center;
+      font-family: $comicbook;
+      font-size: 1.4em;
+      line-height: 18px;
+      overflow: hidden;
+      @include border-radius(50%);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    img {
+      height: 40px;
+    }
+
+    .cart {
+      top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    img {
+      height: 32px;
+    }
+
+    .cart {
+      top: 5px;
+    }
+  }
+}
